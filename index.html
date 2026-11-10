@@ -307,8 +307,7 @@ sv.onmousemove=e=>{
  tp.innerHTML=`IG <b>${c[0]}</b>, IBS <b>${c[1]}</b><br>Skor Akhir <b>${f2(s)}</b>, Rating <b>${L[bd(s)]}</b>`;
 };
 sv.onmouseleave=()=>tp.hidden=true;
-sv.onclick=e=>{const c=S.v==='r'&&at(e);if(c){S.m='p';$('g').value=c[0];IB.forEach(i=>$(i).value=['ev','n1','n2','n3'].includes(i)?c[1]:'');sync();upd()}};
-
+sv.onclick=e=>{const c=S.v==='r'&&at(e);if(c){S.m='p';$('g').value=c[0];IB.forEach(i=>$(i).value=['ev','n1','n2','n3','n4'].includes(i)?c[1]:'');sync();upd()}};
 const kr=(l,r,i)=>`<div class="kr">${i?`<i style="background:${i}"></i>`:''}<b>${l}</b><span>${r}</span></div>`;
 $('kt').innerHTML='<h3>Rating Development</h3>'+C.map((c,i)=>kr('Rating '+L[i],R[i],c)).join('')+
  '<h3>Kategori IG</h3>'+GN.map((n,i)=>kr(n,GR[i])).join('')+
